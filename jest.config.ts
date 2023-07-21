@@ -11,7 +11,6 @@ const config: Config.InitialOptions = {
   testPathIgnorePatterns: ["/node_modules/"],
   moduleNameMapper: {
     "package.json": "<rootDir>/package.json",
-    "mocks/(.*)": "<rootDir>/mocks/$1",
     "[$]/(.*)": "<rootDir>/src/$1",
     "tests/(.*)": "<rootDir>/tests/$1"
   }
