@@ -12,6 +12,7 @@
     "typescript": "5.1.6"
   },
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint . --fix"
   }
 }
