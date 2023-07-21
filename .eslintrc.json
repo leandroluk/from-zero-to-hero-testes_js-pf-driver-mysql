@@ -1,16 +1,11 @@
 {
-  "root": true,
   "env": {
     "es2021": true,
     "node": true
   },
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
     "standard-with-typescript"
-  ],
-  "plugins": [
-    "@typescript-eslint"
   ],
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -56,7 +51,7 @@
       }
     ],
     "@typescript-eslint/semi": "off",
-    // javascript
+    // eslint
     "max-len": [
       "error",
       {
@@ -93,12 +88,8 @@
     "linebreak-style": 0,
     "no-return-await": "error",
     // import
-    "import/no-default-export": "error"
-  },
-  "settings": {
-    "import/resolver": {
-      "typescript": {}
-    }
+    "import/no-default-export": "error",
+    "import/no-duplicates": "off"
   },
   "overrides": [
     {
@@ -111,5 +102,10 @@
         "@typescript-eslint/naming-convention": "off"
       }
     }
-  ]
+  ],
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
 }
